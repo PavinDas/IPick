@@ -9,7 +9,7 @@ A Python-based IP location tracker that peeks into the whereabouts of any IP add
 
 ## Overview
 
-`IPeekaboo` is a lightweight Python script that fetches geolocation data for a given IP address using the `ip-api.com` API. It displays details like city, ISP, country, and coordinates in a vibrant, colorized console output thanks to the `colorama` library.
+A lightweight Python script that fetches geolocation data for a given IP address. It displays details like city, ISP, country, and coordinates in a vibrant, colorized console output.
 
 **Creator**: Pavin Das  
 **GitHub**: [PavinDas](https://github.com/PavinDas)  
