@@ -20,6 +20,7 @@ A lightweight Python script that fetches geolocation data for a given IP address
 ## Features
 
 - **IP Geolocation**: Retrieves city, ISP, country, region, timezone, ZIP, latitude, and longitude for any IP.
+- **Google Map Url**: Get google map url of IP.
 - **Colorful Output**: Uses `colorama` for a visually appealing console experience.
 - **Simple Interface**: Just enter an IP address and get the details.
 - **Error Handling**: Gracefully handles invalid IPs and user interrupts (`Ctrl+C`).
