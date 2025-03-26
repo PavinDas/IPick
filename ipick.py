@@ -31,6 +31,7 @@ if __name__ == "__main__":
         url = f"http://ip-api.com/json/{ip}"
         response = requests.get(url)
         data = json.loads(response.content)
+        mapUrl = f"https://www.google.com/maps/@?api=1&map_action=map&center={data['lat']}%2C{data['lon']}&zoom=15&basemap=satellite&layer=transit"
 
         print()
         print(f"{Fore.CYAN}[+] CITY\t {data['city']}{Style.RESET_ALL}")
@@ -41,6 +42,8 @@ if __name__ == "__main__":
         print(f"{Fore.CYAN}[+] ZIP\t\t { data['zip']}{Style.RESET_ALL}")
         print(f"{Fore.CYAN}[+] LAT\t\t { data['lat']}{Style.RESET_ALL}")
         print(f"{Fore.CYAN}[+] LON\t\t { data['lon']}{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}[+] MAP\t\t {mapUrl}{Style.RESET_ALL}")
+
     except KeyboardInterrupt:
         print()
         print(f"{Fore.RED} \n[-] Exited {Style.RESET_ALL}")
